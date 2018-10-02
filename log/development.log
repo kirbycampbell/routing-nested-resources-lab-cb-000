@@ -1216,3 +1216,19 @@ Processing by SongsController#index as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 4]]
   Rendered songs/index.html.erb within layouts/application (8.4ms)
 Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 97.120.180.108 at 2018-10-02 17:24:22 +0000
+Cannot render console from 97.120.180.108! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists" for 97.120.180.108 at 2018-10-02 17:24:26 +0000
+Cannot render console from 97.120.180.108! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArtistsController#index as HTML
+  [1m[35mArtist Load (0.2ms)[0m  SELECT "artists".* FROM "artists"
+  Rendered artists/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 186ms (Views: 177.1ms | ActiveRecord: 0.6ms)
