@@ -1877,3 +1877,25 @@ Processing by ArtistsController#index as HTML
   [1m[36mArtist Load (0.3ms)[0m  [1mSELECT "artists".* FROM "artists"[0m
   Rendered artists/index.html.erb within layouts/application (2.3ms)
 Completed 200 OK in 173ms (Views: 172.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists" for 97.120.180.108 at 2018-10-02 17:39:28 +0000
+Cannot render console from 97.120.180.108! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArtistsController#index as HTML
+  Rendered artists/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/kirbycampbell/routing-nested-resources-lab-cb-000/app/views/artists/index.html.erb:7: syntax error, unexpected ')'
+...end=( link_to "All Artists",  );@output_buffer.safe_append='
+...                               ^
+/home/kirbycampbell/routing-nested-resources-lab-cb-000/app/views/artists/index.html.erb:9: syntax error, unexpected keyword_ensure, expecting ')'
+/home/kirbycampbell/routing-nested-resources-lab-cb-000/app/views/artists/index.html.erb:11: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/artists/index.html.erb:7: syntax error, unexpected ')'
+  app/views/artists/index.html.erb:9: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/artists/index.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.9ms)
