@@ -1232,3 +1232,7 @@ Processing by ArtistsController#index as HTML
   [1m[35mArtist Load (0.2ms)[0m  SELECT "artists".* FROM "artists"
   Rendered artists/index.html.erb within layouts/application (5.0ms)
 Completed 200 OK in 186ms (Views: 177.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 97.120.180.108 at 2018-10-02 17:24:26 +0000
+Cannot render console from 97.120.180.108! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
